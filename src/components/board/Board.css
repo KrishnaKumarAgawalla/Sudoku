@@ -1,0 +1,15 @@
+.board {
+  display: grid;
+  grid-template-rows: repeat(var(--board-blocks), var(--board-block-size));
+  border: 5px solid black;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(var(--board-blocks), var(--board-block-size));
+  
+}
+
+.col {
+    border: 1px solid black;
+}
