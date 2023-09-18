@@ -13,3 +13,15 @@
 .col {
     border: 1px solid black;
 }
+
+.board-num {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(var(--board-blocks), calc(var(--board-block-size)/1.14));
+  height: calc(var(--board-block-size)/1.14);
+  justify-content: space-evenly;
+}
+
+.board-num-selection {
+  border: 1px solid black;
+}

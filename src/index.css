@@ -1,6 +1,6 @@
 :root {
   --board-blocks: 9;
-  --board-block-size: 5rem;
+  --board-block-size: 4rem;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
 }
 
 code {
@@ -21,8 +22,7 @@ code {
     monospace;
 }
 
-.app-flex{
-  
+.app-flex{  
   display: flex;
   justify-content: center;
   align-items: center;
