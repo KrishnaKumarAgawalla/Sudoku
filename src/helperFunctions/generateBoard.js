@@ -1,9 +1,12 @@
-import React from 'react'
+import { generateEmptyBoard, solveBoard } from "./index";
 
 const generateBoard = () => {
-  return (
-    <div>generateBoard</div>
-  )
-}
+  let board = generateEmptyBoard();
+  solveBoard(board, 0, 0);
 
-export default generateBoard
+  console.table(board);
+
+  return board;
+};
+
+export default generateBoard;

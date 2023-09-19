@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Board.css";
+import {generateBoard} from "../../helperFunctions";
 
 const Board = () => {
-  const [board, setBoard] = useState(Array.from({length: 9}, () => Array.from({length: 9}).fill(0)));
+  const [board, setBoard] = useState(generateBoard);
 
   const selectionNum = Array.from({ length: 9 }, (_, index) => index + 1);
 
@@ -38,7 +39,9 @@ const Board = () => {
 
       <div className="board-num ">
         {selectionNum.map((num, index) => (
-          <div className="board-num-selection app-flex" key={index + 1}>{num}</div>
+          <div className="board-num-selection app-flex" key={index + 1}>
+            {num}
+          </div>
         ))}
       </div>
     </>
